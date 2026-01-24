@@ -1,0 +1,121 @@
+.mainDiv {
+  gap: 100px;
+  #leftDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h5 {
+      color: white;
+      font-size: 20px;
+      font-weight: 500;
+      -webkit-text-stroke: 0.1px black;
+      text-shadow: 0 0 4px rgba(0, 0, 0, 1);
+    }
+    h2 {
+      color: #ff014f;
+      font-size: 30px;
+      margin-top: 20px;
+      font-weight: 900;
+    }
+    article {
+      text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+      margin: 20px 0;
+      color: white;
+      font-size: 24px;
+      max-width: 800px;
+      text-align: center;
+      line-height: 1.5;
+    }
+    p {
+      margin: 10px 0;
+      color: white;
+      font-size: 16px;
+      max-width: 600px;
+      text-align: center;
+      line-height: 1.5;
+    }
+    #callToActions {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #ff014f;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        outline: none;
+        border: none;
+        &:hover {
+          background-color: #e60045;
+          border: 1px solid black;
+        }
+      }
+      a {
+        padding: 10px 20px;
+        transition: all 0.3s ease;
+        font-size: 16px;
+        background-color: transparent;
+        color: #ff014f;
+        border: 2px solid #ff014f;
+        border-radius: 5px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          background-color: blue;
+          color: white;
+          border-color: white;
+        }
+      }
+    }
+  }
+  #rightSpan {
+    overflow: hidden;
+    height: 250px;
+    width: 250px;
+    /* border: 5px solid #ff014f; */
+    border-top: 5px solid #ff014f;
+    border-left: 5px solid #ff014f;
+    border-bottom: 5px solid blue;
+    border-right: 5px solid blue;
+    border-radius: 50%;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+#waveHand {
+  animation: wave 2s infinite;
+  font-size: 25px;
+}
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+}

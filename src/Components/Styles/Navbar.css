@@ -1,0 +1,54 @@
+.navbar {
+  transition: all 0.5s ease;
+  /* height: 150px; */
+  width: 100vw;
+  padding: 20px 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  h2 {
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+    -webkit-text-stroke: 0.1px black;
+    word-spacing: 5px;
+    span {
+      color: #ff014f;
+    }
+  }
+  div {
+    display: flex;
+    gap: 40px;
+    position: relative;
+
+    .navLinks {
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      color: white;
+      text-shadow: 0 0 3px black;
+      transition: all 0.3s ease;
+      font-family:
+        "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      &:hover {
+        color: #ff014f;
+      }
+      &.active {
+        color: #01ff5e;
+      }
+    }
+    .hireME {
+      border: 2px solid #ff014f;
+      padding: 10px 15px;
+      border-radius: 15px;
+      position: absolute;
+      right: -25%;
+      top: -50%;
+
+      &:hover {
+        color: #ff014f;
+      }
+    }
+  }
+}

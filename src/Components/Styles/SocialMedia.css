@@ -1,0 +1,54 @@
+.mainDivSocial {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 200px;
+  flex-direction: column;
+  gap: 40px;
+}
+.holderDiv {
+  display: flex;
+
+  gap: 30px;
+}
+.socialCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background-color: white;
+  box-shadow: 0 0 10px black;
+  height: 150px;
+  width: 450px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  &:hover {
+    transform: scale(1.02);
+  }
+  span {
+    font-size: 20px;
+    i {
+      margin-top: 5px;
+    }
+  }
+}
+.linkedinCard {
+  span {
+    color: #126bc4;
+  }
+}
+.instaCard {
+  span {
+    color: palevioletred;
+  }
+}
+.fbCard {
+  span {
+    color: blue;
+  }
+}

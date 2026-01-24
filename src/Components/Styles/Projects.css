@@ -1,0 +1,250 @@
+.mainDivProjects {
+  display: flex;
+  width: 100vmax;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+}
+#majorCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px 10px;
+  width: 90vmax;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  background-image: linear-gradient(-135deg, violet, purple, blue);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+
+  border: 4px solid white;
+  border-radius: 15px;
+  text-align: center;
+  &:hover {
+    transform: scale(1.01);
+    transition: all 0.5s linear;
+  }
+  h1 {
+    font-size: 25px;
+    font-weight: 900;
+    color: #ff014f;
+    animation: shadowsMajor 2s ease-in-out infinite;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 0 25px black;
+  }
+  p {
+    line-height: 1.5;
+    text-align: center;
+    color: rgb(181, 180, 180);
+  }
+  caption {
+    color: rgb(241, 157, 185);
+    font-size: 35px;
+    font-weight: 700;
+    animation: shadowsMajorText 1s linear infinite;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 10px black;
+  }
+  ul {
+    list-style-type: disc;
+    text-align: justify;
+    color: #fb01ff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 10px;
+  }
+  #gameBtn {
+    background-color: greenyellow;
+    background: conic-gradient(
+      from 0deg,
+      #00f5ff,
+      #7c00ff,
+      #ff00c8,
+      #ffb703,
+      #00f5ff
+    );
+    color: black;
+    text-shadow: 0 0 5px white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: 2px 2px 8px black;
+    transition: all 0.3s linear;
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+}
+@keyframes shadowsMajor {
+  0% {
+    text-shadow: 0 0 22px blue;
+  }
+  50% {
+    text-shadow: 0 0 25px black;
+  }
+  100% {
+    text-shadow: 0 0 22px blue;
+  }
+}
+@keyframes shadowsMajorText {
+  0% {
+    text-shadow: 0 0 22px yellow;
+  }
+  50% {
+    text-shadow: 0 0 25px black;
+  }
+  100% {
+    text-shadow: 0 0 22px yellow;
+  }
+}
+#miniProBoundary {
+  border: 7px ridge #00f5ff;
+  background-image: radial-gradient(green, blue, red);
+  border-radius: 12px;
+  padding: 30px 10px;
+  width: 90vmax;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  overflow-x: hidden;
+  transition: all 0.3s linear;
+  &:hover {
+    transform: scale(1.01);
+  }
+  #nextPrevDiv {
+    display: flex;
+    width: 400px;
+
+    justify-content: space-between;
+    .icons {
+      background-color: rgb(210, 209, 209);
+      display: flex;
+      align-items: center;
+      transition: all 0.2s linear;
+      justify-content: center;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      color: black;
+      &:hover {
+        background-color: grey;
+        color: white;
+      }
+    }
+  }
+  #mpHead {
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+    animation: shadowsMinorText 2s linear infinite;
+  }
+  #miniProCont {
+    transition: all 0.5s linear;
+    position: relative;
+    padding: 0px 20px;
+    height: 450px;
+    min-width: 300%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transform: translateX(33%);
+    gap: 20px;
+
+    .miniProCards {
+      height: 100%;
+      border-radius: 12px;
+      width: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      background-color: white;
+      box-shadow: 0 0 10px black;
+      transition: all 0.2s linear;
+      border: 7px groove black;
+      padding: 0 15px;
+      &:hover {
+        transform: scale(1.03);
+      }
+      h1 {
+        font-size: 20px;
+        font-weight: 900;
+        color: rgb(0, 162, 255);
+      }
+      .imgStore {
+        overflow: hidden;
+        border: 1px solid;
+        border-radius: 8px;
+      }
+      img {
+        height: 200px;
+        width: 400px;
+        object-fit: cover;
+        transition: all 0.2s linear;
+        &:hover {
+          transform: scale(1.02);
+        }
+      }
+      p {
+        text-align: center;
+        line-height: 1.5;
+      }
+      .miniBtn {
+        background-image: radial-gradient(red, blue);
+        padding: 15px 25px;
+        color: white;
+        border-radius: 11px;
+        font-weight: 700;
+        box-shadow: 3px 3px 8px black;
+        transition: all 0.2s linear;
+        &:hover {
+          transform: scale(1.01);
+        }
+      }
+    }
+  }
+}
+@keyframes pop {
+  0% {
+    /* transform: scale(0); */
+    opacity: 0;
+  }
+  100% {
+    /* transform: scale(1); */
+    opacity: 1;
+  }
+}
+
+@keyframes swipeRight {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -50%;
+  }
+}
+@keyframes swipeLeft {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -50%;
+  }
+}

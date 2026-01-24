@@ -1,0 +1,10 @@
+section {
+  min-height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1f0036, #3f0071, #ff4ecd);
+}
