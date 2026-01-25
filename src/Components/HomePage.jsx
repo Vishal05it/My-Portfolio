@@ -39,7 +39,7 @@ function HomePage() {
           style={{ animation: "moveUp 0.9s linear 1 forwards" }}
         >
           <button onClick={() => navigate("/projects")}>View Projects</button>
-          <a href="./Vishal_Updated_Resume.pdf" download>
+          <a href="../../Vishal_Updated_Resume.pdf" download>
             Download Resume
           </a>
         </span>
