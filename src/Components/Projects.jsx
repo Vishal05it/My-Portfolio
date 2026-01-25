@@ -36,33 +36,41 @@ function Projects() {
   return (
     <div className="mainDiv mainDivProjects">
       <div id="majorCard" style={{ animation: "pop 0.6s linear 1 " }}>
-        <h1>Interactive Browser Game (Mario-style)</h1>
+        <h1>Persistent Tic Tac Toe System (React)</h1>
         <a
-          href="https://vishal05it.github.io/Mario-Game-Code/"
+          href="https://persistent-tic-tac-toe-system.vercel.app/"
           title="See Game"
           target="_blank"
         >
-          <img src={BrowserGame} alt="" />
+          <img src={ReactTicTacToe} alt="" />
         </a>
-        <h2>
-          A browser-based interactive game showcasing real-time animations,
-          collision logic, and dynamic gameplay using vanilla JavaScript.
+        <h2 style={{ maxWidth: "1300px" }}>
+          A browser-based stateful game showcasing persistent data storage,
+          global state management, and real-time UI synchronization using React.
         </h2>
-        <p>
-          Built an interactive browser game inspired by classic platformers,
-          featuring smooth animations, collision detection, scoring system, and
-          level progression. Implemented event-driven JavaScript logic and
-          real-time DOM updates to handle gameplay mechanics. Focused on
-          performance, responsiveness, and clean game-state management.
+        <p style={{ maxWidth: "1100px" }}>
+          Built a persistent multi-round Tic Tac Toe system using React, Context
+          API, and localStorage, featuring session recovery, score tracking, and
+          continuous gameplay. Implemented centralized state management for
+          turns, moves, rounds, and scores, with automatic state rehydration
+          after browser reloads. Designed structured game logic for turn flow,
+          win/draw detection, and round lifecycle handling. Focused on clean
+          state architecture, user experience continuity, and reliable
+          game-state control.
         </p>
         <caption>Logics Implemented :</caption>
         <ul>
-          <li>Collision detection & physics logic</li>
-          <li>Real-time DOM updates</li>
-          <li>Game state & scoring system</li>
+          <li>Global state management (Context API)</li>
+          <li>Persistent storage (localStorage)</li>
+          <li>Session recovery & state rehydration</li>
+          <li>Turn-based game flow logic</li>
+          <li>Win-condition & draw detection</li>
+          <li>Multi-round game lifecycle</li>
+          <li>Centralized game-state architecture</li>
+          <li>Real-time UI synchronization</li>
         </ul>
         <a
-          href="https://vishal05it.github.io/Mario-Game-Code/"
+          href="https://persistent-tic-tac-toe-system.vercel.app/"
           target="_blank"
           title="See Game"
           id="gameBtn"
@@ -83,21 +91,20 @@ function Projects() {
             {" "}
             <a
               className="imgStore"
-              href="https://persistent-tic-tac-toe-system.vercel.app/"
+              href="https://vishal05it.github.io/Mario-Game-Code/"
               target="_blank"
             >
-              <img src={ReactTicTacToe} alt="" />
+              <img src={BrowserGame} alt="" />
             </a>
-            <h1>Persistent Tic Tac Toe System </h1>
+            <h1>Interactive Browser Game </h1>
             <p>
-              Built a persistent Tic Tac Toe system in React using Context API
-              and localStorage. Implemented global state management, session
-              recovery, score tracking, and multi-round gameplay with full state
-              restoration.
+              Built an interactive browser game inspired by classic platformers,
+              featuring smooth animations, collision detection, scoring system,
+              and level progression.
             </p>
             <a
               className="miniBtn"
-              href="https://persistent-tic-tac-toe-system.vercel.app/"
+              href="https://vishal05it.github.io/Mario-Game-Code/"
               target="_blank"
             >
               Live Demo
