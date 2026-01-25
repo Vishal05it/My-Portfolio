@@ -8,13 +8,14 @@ import Stopwatch from "../assets/TimerPic.png";
 import YogaPic from "../assets/YogaPic.png";
 import ToDoList from "../assets/ToDoList.png";
 import HeartTask from "../assets/HeartTaskPic.png";
+import ReactTicTacToe from "../assets/TicTacToeReact.png";
 function Projects() {
   let leftSwipeAmt = -50;
   let rightSwipeAmt = -50;
   let btnVal = 0;
   let leftSwipe = () => {
     let miniProCont = document.querySelector("#miniProCont");
-    if (btnVal < 3) {
+    if (btnVal < 4) {
       btnVal++;
       miniProCont.style.left = `${leftSwipeAmt}%`;
       leftSwipeAmt -= 50;
@@ -70,11 +71,38 @@ function Projects() {
           Live Demo
         </a>
       </div>
-      <div id="miniProBoundary" style={{ animation: "pop 0.6s linear 1 " }}>
+      <div
+        id="miniProBoundary"
+        style={{ animation: "pop 0.6s linear 1 ", backgroundColor: "yellow" }}
+      >
         <span>
           <h1 id="mpHead">Mini Projects</h1>
         </span>
         <div id="miniProCont">
+          <span className="miniProCards">
+            {" "}
+            <a
+              className="imgStore"
+              href="https://persistent-tic-tac-toe-system.vercel.app/"
+              target="_blank"
+            >
+              <img src={ReactTicTacToe} alt="" />
+            </a>
+            <h1>Persistent Tic Tac Toe System </h1>
+            <p>
+              Built a persistent Tic Tac Toe system in React using Context API
+              and localStorage. Implemented global state management, session
+              recovery, score tracking, and multi-round gameplay with full state
+              restoration.
+            </p>
+            <a
+              className="miniBtn"
+              href="https://persistent-tic-tac-toe-system.vercel.app/"
+              target="_blank"
+            >
+              Live Demo
+            </a>
+          </span>
           <span className="miniProCards">
             {" "}
             <a
