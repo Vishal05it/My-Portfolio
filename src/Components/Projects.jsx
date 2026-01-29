@@ -87,7 +87,7 @@ function Projects() {
         <span>
           <h1 id="mpHead">Mini Projects</h1>
         </span>
-        <div id="miniProCont">
+        <div id="miniProCont" style={{ padding: "10px 10%" }}>
           <span className="miniProCards">
             {" "}
             <a
