@@ -9,13 +9,14 @@ import YogaPic from "../assets/YogaPic.png";
 import ToDoList from "../assets/ToDoList.png";
 import HeartTask from "../assets/HeartTaskPic.png";
 import ReactTicTacToe from "../assets/TicTacToeReact.png";
+import Banking from "../assets/Banking.png";
 function Projects() {
   let leftSwipeAmt = -50;
   let rightSwipeAmt = -50;
   let btnVal = 0;
   let leftSwipe = () => {
     let miniProCont = document.querySelector("#miniProCont");
-    if (btnVal < 4) {
+    if (btnVal < 5) {
       btnVal++;
       miniProCont.style.left = `${leftSwipeAmt}%`;
       leftSwipeAmt -= 50;
@@ -87,6 +88,29 @@ function Projects() {
           <h1 id="mpHead">Mini Projects</h1>
         </span>
         <div id="miniProCont">
+          <span className="miniProCards">
+            {" "}
+            <a
+              className="imgStore"
+              href="https://persistent-multi-account-transactio.vercel.app/"
+              target="_blank"
+            >
+              <img src={Banking} alt="" />
+            </a>
+            <h1>Multi-Account Transaction System</h1>
+            <p>
+              Built a React-based multi-account transaction system with global
+              state management, localStorage persistence, transaction logging,
+              and rule-based system logic.
+            </p>
+            <a
+              className="miniBtn"
+              href="https://persistent-multi-account-transactio.vercel.app/"
+              target="_blank"
+            >
+              Live Demo
+            </a>
+          </span>
           <span className="miniProCards">
             {" "}
             <a
