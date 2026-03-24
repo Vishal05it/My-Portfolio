@@ -29,7 +29,7 @@ function Navbar() {
           <NavLink className="navLinks" to="/projects">
             Projects
           </NavLink>
-          <NavLink className="navLinks hireME" to="/hireme">
+          <NavLink className="navLinks" to="/hireme">
             Hire Me
           </NavLink>
         </div>
