@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import PortfolioPhoto from "./Styles/Portfolio Photo.png";
-
+import Resume from "./Vishal_Updated_Resume.pdf";
 function HomePage() {
   const navigate = useNavigate();
 
@@ -43,7 +43,7 @@ function HomePage() {
             </button>
 
             <a
-              href="./Vishal_Updated_Resume.pdf"
+              href={Resume}
               download
               className="px-6 py-3 border border-pink-600 text-pink-600 rounded-xl font-medium hover:bg-blue-600 hover:text-white transition text-center hover:border-black"
             >
