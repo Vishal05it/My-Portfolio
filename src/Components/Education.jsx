@@ -2,109 +2,69 @@ import React from "react";
 
 function Education() {
   return (
-    <div className="mainDiv bg-transparent text-white  ">
-      <div
-        className="container max-w-5xl px-4 py-12 mx-auto"
-        bis_skin_checked="1"
-      >
-        <div className="grid gap-10 mx-4 sm:grid-cols-12 " bis_skin_checked="1">
-          <div className="col-span-12 sm:col-span-3" bis_skin_checked="1">
-            <div
-              className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-violet-600"
-              bis_skin_checked="1"
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "10px",
-                animation: "moveRight 0.8s linear 1 forwards",
-              }}
-            >
-              <h3 className="text-3xl font-semibold">Education</h3>
-              <span className="text-sm font-bold tracking-wider uppercase text-[#ff014f]">
-                My academic journey and transition into web development
-              </span>
-            </div>
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
+      <div className="max-w-6xl py-10 mx-auto">
+        {/* HEADING */}
+        <div className="mb-12 text-center lg:text-left fade-down delay-1">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 dark:text-white">
+            Education
+          </h2>
+          <p className="mt-2 text-gray-500 dark:text-gray-400 text-sm sm:text-base">
+            My academic journey and transition into software development
+          </p>
+        </div>
+
+        {/* TIMELINE */}
+        <div className="relative border-l-2 border-gray-200 dark:border-gray-700 pl-6 space-y-10">
+          {/* BTECH */}
+          <div className="relative fade-right delay-2">
+            <span className="absolute -left-[45px] top-2 w-4 h-4 bg-pink-600 rounded-full shadow-md"></span>
+
+            <h3 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-white">
+              B.Tech in Information Technology
+            </h3>
+
+            <p className="text-sm text-pink-600 font-medium">
+              2023 – 2026 (Expected)
+            </p>
+
+            <p className="mt-2 text-gray-600 dark:text-gray-300 text-sm sm:text-base leading-relaxed max-w-2xl">
+              Final-year IT student with hands-on experience in full-stack web
+              development. Built real-world applications using the MERN stack,
+              focusing on authentication, messaging systems, and scalable
+              backend design.
+            </p>
           </div>
-          <div
-            className="relative col-span-12 px-4 space-y-6 sm:col-span-9"
-            bis_skin_checked="1"
-          >
-            <div
-              className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-300"
-              bis_skin_checked="1"
-              style={{ animation: "moveLeft 0.8s linear 1 forwards" }}
-            >
-              <div
-                className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-[#ff014f]"
-                bis_skin_checked="1"
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "10px",
-                }}
-              >
-                <h3 className="text-xl font-semibold tracking-wide">
-                  B.Tech in Information Technology{" "}
-                </h3>
-                <time
-                  className="text-xs tracking-wide uppercase dark:text-gray-600"
-                  style={{ color: "#ff014f" }}
-                >
-                  2023 – 2026 (Expected)
-                </time>
-                <p className="mt-3" style={{ marginBottom: "20px" }}>
-                  Final-year undergraduate student specializing in Information
-                  Technology with a strong focus on frontend development.
-                  Currently building practical skills in React, JavaScript, and
-                  modern web technologies, while learning backend development
-                  using the MERN stack to grow into a full-stack developer.
-                </p>
-              </div>
-              <div
-                className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-[#ff014f]"
-                bis_skin_checked="1"
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "10px",
-                }}
-              >
-                <h3 className="text-xl font-semibold tracking-wide">
-                  Diploma in Mechanical Engineering ( Automobile )
-                </h3>
-                <time
-                  style={{ color: "#ff014f" }}
-                  className="text-xs tracking-wide uppercase dark:text-gray-600"
-                >
-                  2019 – 2022
-                </time>
-                <p className="mt-3">
-                  Completed a diploma in Mechanical Engineering, which helped
-                  build strong problem-solving skills, logical thinking, and
-                  discipline. This phase shaped my analytical mindset and
-                  eventually led me to transition into software development,
-                  where I now apply the same structured thinking to writing
-                  clean and efficient code.
-                </p>
-              </div>
-            </div>
-            <h2
-              style={{
-                color: "pink",
-                marginTop: "50px",
-                animation: "moveUp 0.8s ease-in 1 forwards",
-                fontStyle: "italic",
-              }}
-              className="text-lg font-semibold"
-            >
-              " My academic journey reflects my transition from core engineering
-              to modern software development, driven by continuous learning and
-              hands-on project building. "
-            </h2>
+
+          {/* DIPLOMA */}
+          <div className="relative fade-right delay-3">
+            <span className="absolute -left-[45px] top-2 w-4 h-4 bg-pink-600 rounded-full shadow-md"></span>
+
+            <h3 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-white">
+              Diploma in Mechanical Engineering (Automobile)
+            </h3>
+
+            <p className="text-sm text-pink-600 font-medium">2019 – 2022</p>
+
+            <p className="mt-2 text-gray-600 dark:text-gray-300 text-sm sm:text-base leading-relaxed max-w-2xl">
+              Developed strong problem-solving skills and analytical thinking
+              through core engineering concepts. This foundation helped
+              transition into software development with a structured and logical
+              approach.
+            </p>
           </div>
         </div>
+
+        {/* QUOTE */}
+        <div className="mt-12 text-center fade-up delay-4">
+          <p className="italic text-gray-500 dark:text-gray-400 text-sm sm:text-base max-w-2xl mx-auto">
+            "My journey reflects a transition from core engineering to software
+            development, driven by curiosity, consistency, and real-world
+            project building."
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -92,7 +92,7 @@
   animation: frontProgress 2s ease-in-out 1 forwards;
 }
 .backProg {
-  width: 40%;
+  width: 85%;
   animation: backendProgress 2s ease-in-out 1 forwards;
 }
 .dsaProg {
@@ -121,6 +121,6 @@
   }
   to {
     font-size: 20px;
-    width: 40%;
+    width: 85%;
   }
 }

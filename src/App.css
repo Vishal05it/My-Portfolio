@@ -1,78 +1,202 @@
 @import "tailwindcss";
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
+
+.fade-up {
+  animation: fadeUp 0.8s ease forwards;
 }
+
+.fade-down {
+  animation: fadeDown 0.8s ease forwards;
+}
+
+.fade-left {
+  animation: fadeLeft 0.8s ease forwards;
+}
+
+.fade-right {
+  animation: fadeRight 0.8s ease forwards;
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+.delay-1 {
+  animation-delay: 0.1s;
+}
+.delay-2 {
+  animation-delay: 0.2s;
+}
+.delay-3 {
+  animation-delay: 0.3s;
+}
+.delay-4 {
+  animation-delay: 0.4s;
+}
+.delay-5 {
+  animation-delay: 0.5s;
+}
+/* ===== KEYFRAMES ===== */
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.navItem {
+  font-size: 15px;
+  font-weight: 500;
+  color: #e0e3e7;
+  transition: all 0.25s ease;
+}
+
+.dark .navItem {
+  color: #e5e7eb;
+}
+
+.navItem:hover {
+  color: #db2777;
+}
+
+.navItem.active {
+  color: #db2777;
+  font-weight: 600;
+}
+.skillCard {
+  background-color: white;
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.25s ease;
+}
+
+.dark .skillCard {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+
+.skillCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.skillTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.dark .skillTitle {
+  color: white;
+}
+
+.skillTag {
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 999px;
+  background-color: #f3f4f6;
+  color: #374151;
+  transition: all 0.2s ease;
+}
+
+.dark .skillTag {
+  background-color: #374151;
+  color: #e5e7eb;
+}
+
+.skillTag:hover {
+  background-color: #db2777;
+  color: white;
+}
+.socialCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.dark .socialCard {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+
+.socialCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.socialCard h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.dark .socialCard h3 {
+  color: white;
+}
+
+.socialCard p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.dark .socialCard p {
+  color: #9ca3af;
+}
+html,
 body {
   overflow-x: hidden;
-  min-height: 100vh;
-}
-.mainDiv {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@keyframes moveUp {
-  0% {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-@keyframes moveDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-@keyframes moveLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(50%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0%);
-  }
-}
-@keyframes moveLeftPic {
-  0% {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0%);
-  }
-}
-@keyframes moveRight {
-  0% {
-    opacity: 0;
-    transform: translateX(-50%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0%);
-  }
-}
-@keyframes shadowsMinorText {
-  0% {
-    text-shadow: 0 0 60px black;
-  }
-  50% {
-    text-shadow: 0 0 65px red;
-  }
-  100% {
-    text-shadow: 0 0 60px black;
-  }
+  overflow-y: auto;
 }
