@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import PortfolioPhoto from "./Styles/Portfolio Photo.jpeg";
+import PortfolioPhoto from "./Styles/Portfolio Photo.png";
 
 function HomePage() {
   const navigate = useNavigate();
