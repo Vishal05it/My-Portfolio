@@ -6,7 +6,7 @@ function HomePage() {
   const navigate = useNavigate();
 
   return (
-    <section className="min-h-[90vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
+    <section className="pt-20 sm:pt-24 min-h-[90vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* LEFT CONTENT */}
         <div className="space-y-6 text-center lg:text-left">
