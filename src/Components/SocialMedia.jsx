@@ -36,7 +36,8 @@ function SocialMedia() {
             rel="noopener noreferrer"
             className="socialCard fade-up delay-3"
           >
-            <SiGithub size={28} className="text-gray-800 dark:text-white" />
+            {/* <i class="fa-brands fa-github"></i> */}
+            <SiGithub size={28} className="text-gray-800 dark:text-blue" />
             <h3>GitHub</h3>
             <p>Explore my projects and code repositories</p>
           </a>
