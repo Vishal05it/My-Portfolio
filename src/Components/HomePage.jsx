@@ -43,7 +43,7 @@ function HomePage() {
             </button>
 
             <a
-              href="/Vishal_Updated_Resume.pdf"
+              href="./Vishal_Updated_Resume.pdf"
               download
               className="px-6 py-3 border border-pink-600 text-pink-600 rounded-xl font-medium hover:bg-blue-600 hover:text-white transition text-center hover:border-black"
             >
