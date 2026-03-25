@@ -54,7 +54,7 @@ function HomePage() {
 
         {/* RIGHT IMAGE */}
         <div className="flex justify-center fade-left delay-3">
-          <div className="w-56 h-56 sm:w-72 sm:h-72 rounded-full overflow-hidden border-4 border-pink-600 shadow-xl">
+          <div className="w-56 h-56 sm:w-72 sm:h-72 rounded-full overflow-hidden border-4 border-blue-600 shadow-xl">
             <img
               src={PortfolioPhoto}
               alt="Vishal Tiwari"
