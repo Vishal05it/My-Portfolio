@@ -2,7 +2,7 @@ import React from "react";
 import MERNApp from "../assets/MERN App.jpg";
 import ReactTicTacToe from "../assets/TicTacToeReact.png";
 import Banking from "../assets/Banking.png";
-
+import Memories from "../../Memories.jpg";
 function Projects() {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900 min-h-screen">
@@ -67,6 +67,32 @@ function Projects() {
 
         {/* 🔹 OTHER PROJECTS */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {/* BANKING */}
+          <div className="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-lg hover:shadow-2xl transition fade-up delay-5">
+            <img
+              src={Memories}
+              className="rounded-lg mb-3 w-full h-40 object-cover"
+              alt="Banking App"
+            />
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
+              Full-stack memory management application using the MERN stack
+              (MongoDB, Express, React, Node.js)
+            </h3>
+            <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+              Built a full-stack MERN application that allows users to create,
+              update, and manage personal memories with multiple image uploads,
+              secure JWT authentication, OTP-based password reset via
+              Nodemailer, profile management, and responsive UI with Tailwind
+              CSS.
+            </p>
+            <a
+              href="https://memories-app-jk5b.vercel.app/"
+              target="_blank"
+              className="inline-block mt-2 text-pink-600 text-sm font-medium"
+            >
+              View Project →
+            </a>
+          </div>
           {/* TIC TAC TOE */}
           <div className="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-lg hover:shadow-2xl transition fade-up delay-4">
             <img
@@ -83,29 +109,6 @@ function Projects() {
             </p>
             <a
               href="https://persistent-tic-tac-toe-system.vercel.app/"
-              target="_blank"
-              className="inline-block mt-2 text-pink-600 text-sm font-medium"
-            >
-              View Project →
-            </a>
-          </div>
-
-          {/* BANKING */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-lg hover:shadow-2xl transition fade-up delay-5">
-            <img
-              src={Banking}
-              className="rounded-lg mb-3 w-full h-40 object-cover"
-              alt="Banking App"
-            />
-            <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
-              Multi-Account Transaction System
-            </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
-              Transaction system with account management, global state, and
-              persistent storage handling.
-            </p>
-            <a
-              href="https://persistent-multi-account-transactio.vercel.app/"
               target="_blank"
               className="inline-block mt-2 text-pink-600 text-sm font-medium"
             >
