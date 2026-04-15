@@ -25,6 +25,7 @@ function Skills() {
               <span className="skillTag">JavaScript (ES6+)</span>
               <span className="skillTag">React.js</span>
               <span className="skillTag">Context API</span>
+              <span className="skillTag">Typescript</span>
               <span className="skillTag">Tailwind CSS</span>
             </div>
           </div>
