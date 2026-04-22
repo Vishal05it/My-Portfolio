@@ -20,7 +20,8 @@ function HomePage() {
           <h1 className="fade-up delay-2 text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 dark:text-white leading-tight">
             Full Stack{" "}
             <span className="text-pink-600">
-              MERN & <span className="text-green-400">Next.js</span> Developer
+              <span className="text-blue-400"> MERN</span> &{" "}
+              <span className="text-green-400">Next.js</span> Developer
             </span>
           </h1>
 
