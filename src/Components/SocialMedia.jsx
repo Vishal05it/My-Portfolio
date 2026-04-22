@@ -51,7 +51,7 @@ function SocialMedia() {
 
           {/* EMAIL */}
           <a
-            href="mailto:vishal.tiwari007@gmail.com"
+            href="mailto:www.vishal.tiwari007@gmail.com"
             className="socialCard fade-up delay-5"
           >
             <FaEnvelope size={28} className="text-red-500" />
