@@ -24,6 +24,7 @@ function Skills() {
               <span className="skillTag">CSS3</span>
               <span className="skillTag">JavaScript (ES6+)</span>
               <span className="skillTag">React.js</span>
+              <span className="skillTag">Next.js</span>
               <span className="skillTag">Context API</span>
               <span className="skillTag">Typescript</span>
               <span className="skillTag">Tailwind CSS</span>
@@ -34,6 +35,7 @@ function Skills() {
           <div className="skillCard fade-up delay-3">
             <h3 className="skillTitle">Backend</h3>
             <div className="flex flex-wrap gap-2">
+              <span className="skillTag">Next.js</span>
               <span className="skillTag">Node.js</span>
               <span className="skillTag">Express.js</span>
               <span className="skillTag">MongoDB</span>

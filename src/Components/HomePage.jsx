@@ -18,7 +18,8 @@ function HomePage() {
 
           {/* Main Heading */}
           <h1 className="fade-up delay-2 text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 dark:text-white leading-tight">
-            Full Stack <span className="text-pink-600">MERN Developer</span>
+            Full Stack{" "}
+            <span className="text-pink-600">MERN & Next.js Developer</span>
           </h1>
 
           {/* Description */}
@@ -30,7 +31,7 @@ function HomePage() {
 
           {/* Subtext */}
           <p className="fade-up delay-4 text-sm text-gray-500 dark:text-gray-400">
-            Final-year B.Tech IT student • Open to Frontend & MERN roles
+            Final-year B.Tech IT student • Open to MERN & Next.js roles
           </p>
 
           {/* CTA */}

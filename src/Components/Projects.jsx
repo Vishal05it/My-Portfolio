@@ -3,6 +3,7 @@ import MERNApp from "../assets/MERN App.jpg";
 import ReactTicTacToe from "../assets/TicTacToeReact.png";
 import Banking from "../assets/Banking.png";
 import Memories from "../../Memories.jpg";
+import BlogApp from "../assets/BlogApp.jpeg";
 function Projects() {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900 min-h-screen">
@@ -67,7 +68,31 @@ function Projects() {
 
         {/* 🔹 OTHER PROJECTS */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {/* BANKING */}
+          {/* NEXT.JS BLOG APP */}
+          <div className="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-lg hover:shadow-2xl transition fade-up delay-4">
+            <img
+              src={BlogApp}
+              className="rounded-lg mb-3 w-full h-40 object-cover"
+              alt="Tic Tac Toe"
+            />
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
+              Full Stack Blog Platform (Next.js + Typescript + Cloudinary)
+            </h3>
+            <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+              Full-stack web app using Next.js App Router and
+              MongoDB.Implemented JWT authentication with httpOnly cookies and
+              middleware,developed RESTful APIs for CRUD operations and
+              integrated Cloudinary for image uploads.
+            </p>
+            <a
+              href="https://next-js-blog-app-yh8m.vercel.app/"
+              target="_blank"
+              className="inline-block mt-2 text-pink-600 text-sm font-medium"
+            >
+              View Project →
+            </a>
+          </div>
+          {/* MEMORIES APP */}
           <div className="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-lg hover:shadow-2xl transition fade-up delay-5">
             <img
               src={Memories}
@@ -87,28 +112,6 @@ function Projects() {
             </p>
             <a
               href="https://memories-app-jk5b.vercel.app/"
-              target="_blank"
-              className="inline-block mt-2 text-pink-600 text-sm font-medium"
-            >
-              View Project →
-            </a>
-          </div>
-          {/* TIC TAC TOE */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-lg hover:shadow-2xl transition fade-up delay-4">
-            <img
-              src={ReactTicTacToe}
-              className="rounded-lg mb-3 w-full h-40 object-cover"
-              alt="Tic Tac Toe"
-            />
-            <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
-              Persistent Tic Tac Toe
-            </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
-              React-based game with persistent state, session recovery, and
-              global state management using Context API.
-            </p>
-            <a
-              href="https://persistent-tic-tac-toe-system.vercel.app/"
               target="_blank"
               className="inline-block mt-2 text-pink-600 text-sm font-medium"
             >
