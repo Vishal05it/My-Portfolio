@@ -43,9 +43,13 @@ function SocialMedia() {
           </a>
 
           {/* PORTFOLIO */}
-          <a href="/" className="socialCard fade-up delay-4">
+          <a
+            href="https://vishalweb.org/"
+            target="_blank"
+            className="socialCard fade-up delay-4"
+          >
             <FaGlobe size={28} className="text-pink-600" />
-            <h3>Portfolio</h3>
+            <h3>Business Portfolio</h3>
             <p>View my deployed projects and work</p>
           </a>
 
