@@ -17,11 +17,12 @@ function HireMe() {
 
         {/* ABOUT */}
         <p className="text-gray-300 text-sm sm:text-base leading-relaxed fade-up delay-1">
-          I’m Vishal Tiwari, a final-year B.Tech IT student and MERN stack
+          I’m Vishal Tiwari, a fresher B.Tech IT graduate and MERN stack
           developer. I build real-world web applications with features like
-          authentication, messaging, and scalable backend systems. Currently
-          looking for frontend or full-stack roles, paid internships, and
-          opportunities to contribute to production-level applications.
+          notifiactions, caching, authentication, messaging, and scalable
+          backend systems. Currently looking for frontend or full-stack roles,
+          paid internships, and opportunities to contribute to production-level
+          applications.
         </p>
 
         {/* CTA BUTTONS */}
