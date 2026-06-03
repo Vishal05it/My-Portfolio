@@ -18,15 +18,13 @@ function Education() {
         <div className="relative border-l-2 border-gray-200 dark:border-gray-700 pl-6 space-y-10">
           {/* BTECH */}
           <div className="relative fade-right delay-2">
-            <span className="absolute -left-[45px] top-2 w-4 h-4 bg-pink-600 rounded-full shadow-md"></span>
+            <span className="absolute -left-11.25 top-2 w-4 h-4 bg-pink-600 rounded-full shadow-md"></span>
 
             <h3 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-white">
               B.Tech in Information Technology
             </h3>
 
-            <p className="text-sm text-pink-600 font-medium">
-              2023 – 2026 (Expected)
-            </p>
+            <p className="text-sm text-pink-600 font-medium">2023 – 2026</p>
 
             <p className="mt-2 text-gray-600 dark:text-gray-300 text-sm sm:text-base leading-relaxed max-w-2xl">
               Final-year IT student with hands-on experience in full-stack web
@@ -38,7 +36,7 @@ function Education() {
 
           {/* DIPLOMA */}
           <div className="relative fade-right delay-3">
-            <span className="absolute -left-[45px] top-2 w-4 h-4 bg-pink-600 rounded-full shadow-md"></span>
+            <span className="absolute -left-11.25 top-2 w-4 h-4 bg-pink-600 rounded-full shadow-md"></span>
 
             <h3 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-white">
               Diploma in Mechanical Engineering (Automobile)
