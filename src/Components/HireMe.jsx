@@ -17,12 +17,12 @@ function HireMe() {
 
         {/* ABOUT */}
         <p className="text-gray-300 text-sm sm:text-base leading-relaxed fade-up delay-1">
-          I’m Vishal Tiwari, a fresher B.Tech IT graduate and MERN stack
-          developer. I build real-world web applications with features like
-          notifiactions, caching, authentication, messaging, and scalable
-          backend systems. Currently looking for frontend or full-stack roles,
-          paid internships, and opportunities to contribute to production-level
-          applications.
+          I’m Vishal Tiwari, a fresher B.Tech IT graduate and a MERN stack &
+          Next.js ( full stack ) developer. I build real-world web applications
+          with features like notifiactions, caching, authentication, messaging,
+          and scalable backend systems. Currently looking for frontend or
+          full-stack roles, paid internships, and opportunities to contribute to
+          production-level applications.
         </p>
 
         {/* CTA BUTTONS */}
