@@ -27,10 +27,10 @@ function Education() {
             <p className="text-sm text-pink-600 font-medium">2023 – 2026</p>
 
             <p className="mt-2 text-gray-600 dark:text-gray-300 text-sm sm:text-base leading-relaxed max-w-2xl">
-              Final-year IT student with hands-on experience in full-stack web
+              Fresher B.Tech graduate with hands-on experience in full-stack web
               development. Built real-world applications using the MERN stack,
-              focusing on authentication, messaging systems, and scalable
-              backend design.
+              focusing on authentication, caching, notifications, messaging
+              systems, and scalable backend design.
             </p>
           </div>
 
