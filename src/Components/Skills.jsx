@@ -38,6 +38,7 @@ function Skills() {
               <span className="skillTag">Next.js</span>
               <span className="skillTag">Node.js</span>
               <span className="skillTag">Express.js</span>
+              <span className="skillTag">Redis</span>
               <span className="skillTag">MongoDB</span>
               <span className="skillTag">Mongoose</span>
               <span className="skillTag">REST APIs</span>
@@ -65,6 +66,7 @@ function Skills() {
               <span className="skillTag">VS Code</span>
               <span className="skillTag">Vercel</span>
               <span className="skillTag">Render</span>
+              <span className="skillTag">Redis Cloud</span>
             </div>
           </div>
         </div>
