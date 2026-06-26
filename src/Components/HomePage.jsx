@@ -197,12 +197,12 @@ function HomePage() {
       </div>
 
       {/* Scroll hint */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 fade-up delay-6 flex flex-col items-center gap-1">
+      {/* <div className="absolute bottom-6 left-1/2 -translate-x-1/2 fade-up delay-6 flex flex-col items-center gap-1">
         <span className="text-xs text-slate-400 dark:text-slate-600 tracking-widest uppercase">
           scroll
         </span>
         <div className="w-px h-6 bg-linear-to-b from-slate-400 dark:from-slate-600 to-transparent" />
-      </div>
+      </div> */}
     </section>
   );
 }
