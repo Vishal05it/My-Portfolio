@@ -154,105 +154,55 @@ function Projects() {
 
         {/* ── OTHER PROJECTS ── */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {/* MERN Stack Social Media */}
-          <div
-            className="rounded-2xl overflow-hidden transition-all duration-300 fade-up delay-4 group cursor-default"
-            style={{
-              background: "#0f172a",
-              border: "1px solid rgba(255,255,255,0.07)",
-            }}
-            onMouseEnter={(e) =>
-              (e.currentTarget.style.borderColor = "rgba(236,72,153,0.4)")
-            }
-            onMouseLeave={(e) =>
-              (e.currentTarget.style.borderColor = "rgba(255,255,255,0.07)")
-            }
-          >
-            <div className="relative overflow-hidden">
-              <img
-                src={MERNApp}
-                className="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-105"
-                alt="MERN Social Platform"
-              />
-              <div
-                className="absolute inset-0"
-                style={{
-                  background:
-                    "linear-gradient(to top, rgba(15,23,42,0.7) 0%, transparent 60%)",
-                }}
-              />
-            </div>
-            <div className="p-5 space-y-3">
-              <h3 className="text-lg font-bold text-white">
-                MERN Stack Social Platform
-              </h3>
-              <p className="text-sm text-slate-400 leading-relaxed">
-                A full-stack social media application with authentication,
-                real-time messaging, notifications, and post interactions. Built
-                using React, Node.js, Express, and MongoDB with JWT
-                authentication.
-              </p>
-              <a
-                href="https://mern-stack-social-platform.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 text-sm font-semibold transition-colors hover:opacity-80"
-                style={{ color: "#ec4899" }}
-              >
-                View Project →
-              </a>
-            </div>
+          {/* MERN Stack Social Media Platform APP */}
+          <div className="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-lg hover:shadow-2xl transition fade-up delay-4">
+            <img
+              src={MERNApp}
+              className="rounded-lg mb-3 w-full h-40 object-cover"
+              alt="Tic Tac Toe"
+            />
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
+              MERN Stack Social Platform
+            </h3>
+            <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+              A full-stack social media application with authentication,
+              real-time messaging, notifications, and post interactions. Built
+              using React, Node.js, Express, and MongoDB with JWT
+              authentication.
+            </p>
+            <a
+              href="https://mern-stack-social-platform.vercel.app/"
+              target="_blank"
+              className="inline-block mt-2 text-pink-600 text-sm font-medium"
+            >
+              View Project →
+            </a>
           </div>
-
-          {/* Memories App */}
-          <div
-            className="rounded-2xl overflow-hidden transition-all duration-300 fade-up delay-5 group cursor-default"
-            style={{
-              background: "#0f172a",
-              border: "1px solid rgba(255,255,255,0.07)",
-            }}
-            onMouseEnter={(e) =>
-              (e.currentTarget.style.borderColor = "rgba(139,92,246,0.4)")
-            }
-            onMouseLeave={(e) =>
-              (e.currentTarget.style.borderColor = "rgba(255,255,255,0.07)")
-            }
-          >
-            <div className="relative overflow-hidden">
-              <img
-                src={TaskFlow}
-                className="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-105"
-                alt="Memories App"
-              />
-              <div
-                className="absolute inset-0"
-                style={{
-                  background:
-                    "linear-gradient(to top, rgba(15,23,42,0.7) 0%, transparent 60%)",
-                }}
-              />
-            </div>
-            <div className="p-5 space-y-3">
-              <h3 className="text-lg font-bold text-white">
-                TaskFlow – Full Stack Task Management Platform
-              </h3>
-              <p className="text-sm text-slate-400 leading-relaxed">
-                A production-ready task management application built with
-                Next.js, Express.js, Prisma ORM, MySQL, Redis, and Tailwind CSS
-                featuring JWT authentication, OTP verification, secure CRUD
-                operations, search & filtering, pagination, profile management,
-                Cloudinary image uploads, and a responsive dark/light UI.
-              </p>
-              <a
-                href="https://task-flow-full-stack-task-managemen-five.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 text-sm font-semibold transition-colors hover:opacity-80"
-                style={{ color: "#8b5cf6" }}
-              >
-                View Project →
-              </a>
-            </div>
+          {/* MEMORIES APP */}
+          <div className="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-lg hover:shadow-2xl transition fade-up delay-5">
+            <img
+              src={Memories}
+              className="rounded-lg mb-3 w-full h-40 object-cover"
+              alt="Banking App"
+            />
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
+              Full-stack memory management application using the MERN stack
+              (MongoDB, Express, React, Node.js)
+            </h3>
+            <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+              Built a full-stack MERN application that allows users to create,
+              update, and manage personal memories with multiple image uploads,
+              secure JWT authentication, OTP-based password reset via
+              Nodemailer, profile management, and responsive UI with Tailwind
+              CSS.
+            </p>
+            <a
+              href="https://memories-app-jk5b.vercel.app/"
+              target="_blank"
+              className="inline-block mt-2 text-pink-600 text-sm font-medium"
+            >
+              View Project →
+            </a>
           </div>
         </div>
       </div>
