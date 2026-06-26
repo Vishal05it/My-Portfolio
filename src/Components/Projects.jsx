@@ -5,6 +5,7 @@ import Banking from "../assets/Banking.png";
 import Memories from "../../Memories.jpg";
 import BlogApp from "../assets/BlogApp.jpeg";
 import EaseWork from "../assets/5.jpg";
+import TaskFlow from "../assets/TaskFlow.jpg";
 function Projects() {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900 min-h-screen">
@@ -99,23 +100,22 @@ function Projects() {
           {/* MEMORIES APP */}
           <div className="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-lg hover:shadow-2xl transition fade-up delay-5">
             <img
-              src={Memories}
+              src={TaskFlow}
               className="rounded-lg mb-3 w-full h-40 object-cover"
-              alt="Banking App"
+              alt="TaskFlow App"
             />
             <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
-              Full-stack memory management application using the MERN stack
-              (MongoDB, Express, React, Node.js)
+              TaskFlow – Full Stack Task Management Platform
             </h3>
             <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
-              Built a full-stack MERN application that allows users to create,
-              update, and manage personal memories with multiple image uploads,
-              secure JWT authentication, OTP-based password reset via
-              Nodemailer, profile management, and responsive UI with Tailwind
-              CSS.
+              A production-ready task management application built with Next.js,
+              Express.js, Prisma ORM, MySQL, Redis, and Tailwind CSS featuring
+              JWT authentication, OTP verification, secure CRUD operations,
+              search & filtering, pagination, profile management, Cloudinary
+              image uploads, and a responsive dark/light UI.
             </p>
             <a
-              href="https://memories-app-jk5b.vercel.app/"
+              href="https://task-flow-full-stack-task-managemen-five.vercel.app/"
               target="_blank"
               className="inline-block mt-2 text-pink-600 text-sm font-medium"
             >
