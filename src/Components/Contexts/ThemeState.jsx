@@ -1,8 +1,12 @@
 import React from "react";
-import { createContext, useState, useContext } from "react";
+import { createContext, useState, useContext, useEffect } from "react";
 export const themeContext = createContext();
 function ThemeState({ children }) {
   let [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", theme === "dark");
+  }, [theme]);
 
   function darkMode() {
     setTheme("dark");

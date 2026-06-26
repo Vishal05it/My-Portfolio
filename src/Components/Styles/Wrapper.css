@@ -1,8 +1,1 @@
-section {
-  width: 100%;
-  position: absolute;
-  min-height: 100vh;
-  top: 0;
-  left: 0;
-  background: linear-gradient(135deg, #1f0036, #3f0071, #ff4ecd);
-}
+/* Decorative background orbs — handled via Wrapper.jsx inline styles */

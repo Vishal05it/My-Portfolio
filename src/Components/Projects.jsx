@@ -5,34 +5,93 @@ import Banking from "../assets/Banking.png";
 import Memories from "../../Memories.jpg";
 import BlogApp from "../assets/BlogApp.jpeg";
 import EaseWork from "../assets/5.jpg";
+import TaskFlow from "../assets/TaskFlow.jpg";
 function Projects() {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-900 min-h-screen">
-      <div className="max-w-6xl py-3 mx-auto">
-        {/* HEADING */}
-        <div className="mb-12 text-center fade-down delay-1">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white">
-            Projects
+    <section
+      className="relative py-20 px-4 sm:px-6 lg:px-8 min-h-screen overflow-hidden"
+      style={{ background: "#020617" }}
+    >
+      {/* Background accents */}
+      <div
+        className="absolute top-0 right-0 w-96 h-96 rounded-full pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(236,72,153,0.12) 0%, transparent 70%)",
+        }}
+      />
+      <div
+        className="absolute bottom-0 left-0 w-80 h-80 rounded-full pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(139,92,246,0.1) 0%, transparent 70%)",
+        }}
+      />
+
+      <div className="max-w-6xl mx-auto py-10 relative">
+        {/* ── HEADING ── */}
+        <div className="mb-16 text-center fade-down delay-1">
+          <span
+            className="inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4"
+            style={{
+              background: "rgba(236,72,153,0.1)",
+              border: "1px solid rgba(236,72,153,0.25)",
+              color: "#ec4899",
+            }}
+          >
+            My Work
+          </span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
+            Featured <span className="gradient-text">Projects</span>
           </h2>
-          <p className="mt-2 text-gray-400">
+          <p className="mt-3 text-slate-400 max-w-lg mx-auto">
             Real-world applications built using MERN and Next.js
           </p>
         </div>
 
-        {/* 🔥 MAIN PROJECT */}
-        <div className="bg-gray-800 rounded-2xl shadow-xl overflow-hidden mb-16 fade-up delay-2">
-          <img
-            src={EaseWork}
-            alt="MERN Social Platform"
-            className="w-full h-46 sm:h-64 object-cover"
-          />
+        {/* ── FEATURED PROJECT ── */}
+        <div
+          className="rounded-2xl overflow-hidden mb-16 fade-up delay-2 group"
+          style={{ border: "1px solid rgba(255,255,255,0.07)" }}
+        >
+          {/* Image */}
+          <div className="relative overflow-hidden">
+            <img
+              src={EaseWork}
+              alt="EaseWork Platform"
+              className="w-full h-52 sm:h-72 object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            {/* Overlay gradient */}
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(to top, #0f172a 0%, rgba(15,23,42,0.3) 50%, transparent 100%)",
+              }}
+            />
+            {/* Featured badge */}
+            <div className="absolute top-4 left-4">
+              <span
+                className="px-3 py-1.5 rounded-full text-xs font-bold text-white"
+                style={{
+                  background: "linear-gradient(135deg, #ec4899, #8b5cf6)",
+                  boxShadow: "0 4px 14px rgba(236,72,153,0.4)",
+                }}
+              >
+                ⭐ Featured Project
+              </span>
+            </div>
+          </div>
 
-          <div className="p-6 space-y-4">
-            <h3 className="text-xl font-bold text-white">
-              EaseWork – Team Collaboration & Project Management Platform
+          {/* Content */}
+          <div
+            className="p-6 sm:p-8 space-y-4"
+            style={{ background: "#0f172a" }}
+          >
+            <h3 className="text-xl sm:text-2xl font-bold text-white">
+              EaseWork – Team Collaboration &amp; Project Management Platform
             </h3>
-
-            <p className="text-gray-300">
+            <p className="text-slate-300 leading-relaxed text-sm sm:text-base">
               EaseWork is a full-stack SaaS-style project management platform
               designed to help organizations manage teams, projects, tasks, and
               communication from a single workspace. The platform supports
@@ -41,86 +100,159 @@ function Projects() {
               notifications, media uploads, email automation, and payment
               integration.
             </p>
-
-            {/* TECH TAGS */}
             <div className="flex flex-wrap gap-2">
-              <span className="skillTag">React</span>
-              <span className="skillTag">Next.js</span>
-              <span className="skillTag">Redis</span>
-              <span className="skillTag">MongoDB</span>
-              <span className="skillTag">Typescript</span>
-              <span className="skillTag">REST APIs</span>
+              {[
+                "React",
+                "Next.js",
+                "Redis",
+                "MongoDB",
+                "Typescript",
+                "REST APIs",
+              ].map((tag) => (
+                <span key={tag} className="projectTag">
+                  {tag}
+                </span>
+              ))}
             </div>
-
-            {/* BUTTON */}
             <a
               href="https://crm-tprb.vercel.app/"
               target="_blank"
-              className="inline-block mt-2 px-5 py-2 bg-pink-600 text-white rounded-lg hover:bg-pink-700 transition"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mt-2 px-6 py-2.5 rounded-xl font-semibold text-white text-sm transition-all hover:opacity-90 hover:-translate-y-0.5"
+              style={{
+                background: "linear-gradient(135deg, #ec4899, #8b5cf6)",
+                boxShadow: "0 4px 18px rgba(236,72,153,0.35)",
+              }}
             >
-              Live Demo
+              Live Demo →
             </a>
           </div>
         </div>
 
-        {/*  SEPARATOR  */}
-        <div className="mb-8 text-center fade-up delay-3">
-          <h3 className="text-lg font-semibold text-gray-300">
-            Other Projects
-          </h3>
+        {/* ── SEPARATOR ── */}
+        <div className="mb-10 fade-up delay-3">
+          <div className="flex items-center gap-4">
+            <div
+              className="flex-1 h-px"
+              style={{
+                background:
+                  "linear-gradient(to right, transparent, rgba(255,255,255,0.12))",
+              }}
+            />
+            <h3 className="text-sm font-semibold text-slate-500 px-4 tracking-wider uppercase">
+              Other Projects
+            </h3>
+            <div
+              className="flex-1 h-px"
+              style={{
+                background:
+                  "linear-gradient(to left, transparent, rgba(255,255,255,0.12))",
+              }}
+            />
+          </div>
         </div>
 
-        {/* 🔹 OTHER PROJECTS */}
+        {/* ── OTHER PROJECTS ── */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {/* MERN Stack Social Media Platform APP */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-lg hover:shadow-2xl transition fade-up delay-4">
-            <img
-              src={MERNApp}
-              className="rounded-lg mb-3 w-full h-40 object-cover"
-              alt="Tic Tac Toe"
-            />
-            <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
-              MERN Stack Social Platform
-            </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
-              A full-stack social media application with authentication,
-              real-time messaging, notifications, and post interactions. Built
-              using React, Node.js, Express, and MongoDB with JWT
-              authentication.
-            </p>
-            <a
-              href="https://mern-stack-social-platform.vercel.app/"
-              target="_blank"
-              className="inline-block mt-2 text-pink-600 text-sm font-medium"
-            >
-              View Project →
-            </a>
+          {/* MERN Stack Social Media */}
+          <div
+            className="rounded-2xl overflow-hidden transition-all duration-300 fade-up delay-4 group cursor-default"
+            style={{
+              background: "#0f172a",
+              border: "1px solid rgba(255,255,255,0.07)",
+            }}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.borderColor = "rgba(236,72,153,0.4)")
+            }
+            onMouseLeave={(e) =>
+              (e.currentTarget.style.borderColor = "rgba(255,255,255,0.07)")
+            }
+          >
+            <div className="relative overflow-hidden">
+              <img
+                src={MERNApp}
+                className="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-105"
+                alt="MERN Social Platform"
+              />
+              <div
+                className="absolute inset-0"
+                style={{
+                  background:
+                    "linear-gradient(to top, rgba(15,23,42,0.7) 0%, transparent 60%)",
+                }}
+              />
+            </div>
+            <div className="p-5 space-y-3">
+              <h3 className="text-lg font-bold text-white">
+                MERN Stack Social Platform
+              </h3>
+              <p className="text-sm text-slate-400 leading-relaxed">
+                A full-stack social media application with authentication,
+                real-time messaging, notifications, and post interactions. Built
+                using React, Node.js, Express, and MongoDB with JWT
+                authentication.
+              </p>
+              <a
+                href="https://mern-stack-social-platform.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-sm font-semibold transition-colors hover:opacity-80"
+                style={{ color: "#ec4899" }}
+              >
+                View Project →
+              </a>
+            </div>
           </div>
-          {/* MEMORIES APP */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-lg hover:shadow-2xl transition fade-up delay-5">
-            <img
-              src={Memories}
-              className="rounded-lg mb-3 w-full h-40 object-cover"
-              alt="Banking App"
-            />
-            <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
-              Full-stack memory management application using the MERN stack
-              (MongoDB, Express, React, Node.js)
-            </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
-              Built a full-stack MERN application that allows users to create,
-              update, and manage personal memories with multiple image uploads,
-              secure JWT authentication, OTP-based password reset via
-              Nodemailer, profile management, and responsive UI with Tailwind
-              CSS.
-            </p>
-            <a
-              href="https://memories-app-jk5b.vercel.app/"
-              target="_blank"
-              className="inline-block mt-2 text-pink-600 text-sm font-medium"
-            >
-              View Project →
-            </a>
+
+          {/* Memories App */}
+          <div
+            className="rounded-2xl overflow-hidden transition-all duration-300 fade-up delay-5 group cursor-default"
+            style={{
+              background: "#0f172a",
+              border: "1px solid rgba(255,255,255,0.07)",
+            }}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.borderColor = "rgba(139,92,246,0.4)")
+            }
+            onMouseLeave={(e) =>
+              (e.currentTarget.style.borderColor = "rgba(255,255,255,0.07)")
+            }
+          >
+            <div className="relative overflow-hidden">
+              <img
+                src={TaskFlow}
+                className="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-105"
+                alt="Memories App"
+              />
+              <div
+                className="absolute inset-0"
+                style={{
+                  background:
+                    "linear-gradient(to top, rgba(15,23,42,0.7) 0%, transparent 60%)",
+                }}
+              />
+            </div>
+            <div className="p-5 space-y-3">
+              <h3 className="text-lg font-bold text-white">
+                TaskFlow – Full Stack Task Management Platform
+              </h3>
+              <p className="text-sm text-slate-400 leading-relaxed">
+                A production-ready task management application built with
+                Next.js, Express.js, Prisma ORM, MySQL, Redis, and Tailwind CSS
+                featuring JWT authentication, OTP verification, secure CRUD
+                operations, search & filtering, pagination, profile management,
+                Cloudinary image uploads, and a responsive dark/light UI.
+              </p>
+              <a
+                href="https://task-flow-full-stack-task-managemen-five.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-sm font-semibold transition-colors hover:opacity-80"
+                style={{ color: "#8b5cf6" }}
+              >
+                View Project →
+              </a>
+            </div>
           </div>
         </div>
       </div>
